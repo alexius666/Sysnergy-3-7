@@ -36,7 +36,6 @@ public class Status {
                     fork.put(right, false);
                     System.out.println(Thread.currentThread().getName()+": Филосов взял " + left + " и " + right + " вилки и ест... (Вилки на столе: "+fork+")");
                     locker.unlock();
-                    //Thread.currentThread().getName()
                     Thread.sleep(1000);
                     locker.lock();
                     fork.put(left, true);
