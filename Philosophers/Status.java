@@ -22,7 +22,7 @@ public class Status {
         fork.put(5, true);
 
         fork.forEach((k, v) -> {
-            System.out.format("fork #%s on the table - %s%n", k + 1, v);
+            System.out.format("вилка #%s на столе - %s%n", k, v);
         });
     }
 
